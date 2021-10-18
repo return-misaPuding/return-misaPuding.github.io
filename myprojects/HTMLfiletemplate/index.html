@@ -4,19 +4,19 @@
     <title>return-misaPudings page | HTML document template</title>
   </head>
   <body>
-    <pre id=HTMLtemplate></pre>
+    <pre id="HTMLtemplate"></pre>
     <script>console.log("The HTML document template injection script started executing");
-      var template = "<!DOCTYPE html>
-      <html>
-          <head>
-          <title>return-misaPudings site | YOUR PAGE NAME HERE</title>
-      </head>
-      <body>
-            
-            </body>
-      </html>
-      ";
-      document.getElementByID("HTMLtemplate").innerText = template</script>
+      /* credit to W3Schools for this script */
+      var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      var template = xhttp.responseText;
+       document.getElementById("HTMLtemplate").innerText = template;
+    }
+};
+xhttp.open("GET", "/mydata/HTMLfiletemplate.txt", true);
+xhttp.send();
+    </script>
     <input type=button value="Copy template" onclick=navigator.clipboard.writeText(template)>
     <br>
     Also, here are some useful things to copy when programming a web page:
