@@ -2,13 +2,37 @@
 <html>
   <head>
     <title>return-misaPudings page | HTML document template</title>
-    <script>console.log("The HTML document template injection script started executing");
-      /* credit to W3Schools for this script */
+    <script>
+    /* declare all variables */
+      console.log("declaring variables...");
+      var myHTMLtemplate;
+      var brelement;
+      brelement = "<br>";
+      var h1element;
+      h1element = "<h1></h1>";
+      console.log("variables declared");
+    </script>
+    <script>
+    function copyh1Element() {
+    navigator.clipboard.writeText(h1element);
+    }
+    </script>
+    <script>
+    function copyBrElement() {
+    navigator.clipboard.writeText(brelement);
+    }
+    </script>
+    <script>
+    function copyTemplate() {
+    navigator.clipboard.writeText(myHTMLtemplate);
+    }
+    </script>
+    <script>/* credit to W3Schools for this script */
       var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      template = xhttp.responseText;
-       document.getElementById("HTMLtemplate").innerText = template;
+      myHTMLtemplate = xhttp.responseText;
+       document.getElementById("HTMLtemplate").innerText = myHTMLtemplate;
     }
 };
 xhttp.open("GET", "/mydata/HTMLfiletemplate.txt", true);
@@ -18,16 +42,12 @@ xhttp.send();
   <body>
     <pre id="HTMLtemplate"></pre>
     <br>
-    <input type=button value="Copy template" onclick=navigator.clipboard.writeText(template)>
+    <input type=button value="Copy template" title="Copy template" onclick="copyTemplate()">
     <br>
     Also, here are some useful things to copy when programming a web page:
     <br>
-    <input type=button value="Copy the > character" onclick="navigator.clipboard.writeText(">")">
+    <input type=button value="Copy the br element" onclick="copyBrElement()">
     <br>
-    <input type=button value="Copy the < character" onclick="navigator.clipboard.writeText("<")">
-    <br>
-    <input type=button value="Copy the br element" onclick="navigator.clipboard.writeText("<br>")">
-    <br>
-    <input type="button" value="Copy the h1 element" onclick="navigator.clipboard.writeText("<h1></h1>")">
+    <input type="button" value="Copy the h1 element" onclick="copyh1Element()">
   </body>
 </html>
