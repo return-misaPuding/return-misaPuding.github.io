@@ -1,4 +1,4 @@
-console.log("my http requests library /js/libhttprequests.js started declaring functions")
+console.log("my http requests library /js/libhttprequests.js started declaring functions");
 function myHttpRequest(myRequestMethod, myRequestPath, myRequestUnknownBoolean = true) {
 var myRequestResponse;
   /* credit to W3Schools for the following script */
