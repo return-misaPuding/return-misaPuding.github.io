@@ -2,21 +2,22 @@
 <html>
   <head>
     <title>return-misaPudings page | HTML document template</title>
-  </head>
-  <body>
-    <pre id="HTMLtemplate"></pre>
     <script>console.log("The HTML document template injection script started executing");
       /* credit to W3Schools for this script */
       var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      var template = xhttp.responseText;
+      template = xhttp.responseText;
        document.getElementById("HTMLtemplate").innerText = template;
     }
 };
 xhttp.open("GET", "/mydata/HTMLfiletemplate.txt", true);
 xhttp.send();
     </script>
+  </head>
+  <body>
+    <pre id="HTMLtemplate"></pre>
+    <br>
     <input type=button value="Copy template" onclick=navigator.clipboard.writeText(template)>
     <br>
     Also, here are some useful things to copy when programming a web page:
@@ -25,10 +26,8 @@ xhttp.send();
     <br>
     <input type=button value="Copy the < character" onclick="navigator.clipboard.writeText("<")">
     <br>
-    <input type=button value="Copy the input element" onclick="navigator.clipboard.writeText("<input>")">
+    <input type=button value="Copy the br element" onclick="navigator.clipboard.writeText("<br>")">
     <br>
-    <input type="button" value="Copy the h1 element" onclick="navigator.clipboard.writeText("<input><input>")">
-    <br>
-    <input type=button value="Copy the <> angle brackets" onclick="navigator.clipboard.writeText("<>")">
+    <input type="button" value="Copy the h1 element" onclick="navigator.clipboard.writeText("<h1></h1>")">
   </body>
 </html>
