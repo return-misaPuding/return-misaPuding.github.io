@@ -3,6 +3,10 @@ var libhttprequestsDebug;
 var libhttprequestsFunctionTestGlobalScopeOutput;
 var myRequestResponse;
 var myGETRequestResponse;
+function libhttprequestsDebugOn() {
+libhttprequestsDebug = true;
+return libhttprequestsDebug;
+}
 function libhttprequestsFunctionTest() {
 console.log ("you should see \" this text was stored in a (global scope/function scope) variable\" under this log");
 libhttprequestsGlobalScopeOutput = "this text was stored in a global scope output";
