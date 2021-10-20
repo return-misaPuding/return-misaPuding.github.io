@@ -25,13 +25,13 @@ console.log (libhttprequestsFunctionScopeOutput);
 return libhttprequestsFunctionScopeOutput;
 }
 function myHttpRequest(myRequestMethod, myRequestPath, myRequestUnknownBoolean = true) {
-  /* credit to W3Schools for the following script */
   if (libhttprequestDebug) {
     libhttprequestsDebugRequestInitLog = "Debugging a" + myRequestMethod + "request to" + myRequestPath + ":";
   console.log(libhttprequestsDebugRequestInitLog);
     libhttprequestsDebugInitRequestResponseLog = "The initial value of myRequestResponse is" + myRequestResponse;
     console.log(libhttprequestsDebugInitRequestResponseLog);
   }
+  /* credit for the following script to W3Schools */
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
