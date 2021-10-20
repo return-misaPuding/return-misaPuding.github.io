@@ -18,6 +18,7 @@ console.log (libhttprequestsGlobalScopeOutput);
 var libhttprequestsFunctionScopeOutput;
 libhttprequestsFunctionScopeOutput = "this text was stored in a function scope variable";
 console.log (libhttprequestsFunctionScopeOutput);
+return libhttprequestsFunctionScopeOutput;
 }
 function myHttpRequest(myRequestMethod, myRequestPath, myRequestUnknownBoolean = true) {
   /* credit to W3Schools for the following script */
