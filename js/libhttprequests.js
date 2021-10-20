@@ -25,7 +25,7 @@ console.log (libhttprequestsFunctionScopeOutput);
 return libhttprequestsFunctionScopeOutput;
 }
 function myHttpRequest(myRequestMethod, myRequestPath, myRequestUnknownBoolean = true) {
-  if (libhttprequestDebug) {
+  if (libhttprequestsDebug) {
     libhttprequestsDebugRequestInitLog = "Debugging a" + myRequestMethod + "request to" + myRequestPath + ":";
   console.log(libhttprequestsDebugRequestInitLog);
     libhttprequestsDebugInitRequestResponseLog = "The initial value of myRequestResponse is" + myRequestResponse;
@@ -37,7 +37,7 @@ xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
        // Typical action to be performed when the document is ready:
        myRequestResponse = xhttp.responseText;
-      if (libhttprequestDebug) {
+      if (libhttprequestsDebug) {
     libhttprequestsDebugRequestResponseLog = "The request response is:" + xhttp.responseText;
   console.log(libhttprequestsDebugRequestResponseLog);
   }
@@ -45,8 +45,10 @@ xhttp.onreadystatechange = function() {
 };
 xhttp.open(myRequestMethod, myRequestPath, myRequestUnknownBoolean);
 xhttp.send();
+if (libhttprequestsDebug) {
 libhttprequestsDebugmyHttpRequestFunctionResponseLog = "The myHttpRequest function should return this:" + myRequestResponse;
 console.log(libhttprequestsDebugmyHttpRequestFunctionResponseLog);
+}
 return myRequestResponse;
 }
 
