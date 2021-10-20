@@ -1,6 +1,14 @@
 console.log("my http requests library /js/libhttprequests.js started declaring functions");
-function myHttpRequest(myRequestMethod, myRequestPath, myRequestUnknownBoolean = true) {
+var libhttprequestsDebug;
+var libhttprequestsFunctionTestGlobalScopeOutput;
 var myRequestResponse;
+var myGETRequestResponse;
+function libhttprequestsFunctionTest() {
+console.log ("you should see \" this text was stored in a (global scope/function scope) variable\" under this log");
+libhttprequestsGlobalScopeOutput = "this text was stored in a global scope output";
+console.log (libhttprequestsGlobalScopeOutput);
+}
+function myHttpRequest(myRequestMethod, myRequestPath, myRequestUnknownBoolean = true) {
   /* credit to W3Schools for the following script */
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
@@ -15,7 +23,6 @@ return myRequestResponse;
 }
 
 function myGETRequest(myGETRequestPath, myGETRequestUnknownBoolean = true) {
- var myGETRequestResponse;
  myGETRequestResponse = myHttpRequest("GET", myGETRequestPath, myGETRequestUnknownBoolean);
  return myGETRequestResponse;
 }
