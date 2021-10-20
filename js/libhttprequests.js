@@ -1,4 +1,8 @@
 console.log("my http requests library /js/libhttprequests.js started declaring functions");
+var libhttprequestsDebugRequestInitLog;
+var libhttprequestsDebugInitRequestResponseLog;
+var libhttprequestsDebugRequestResponseLog;
+var libhttprequestsDebugmyHttpRequestFunctionResponseLog;
 var libhttprequestsDebug;
 var libhttprequestsFunctionTestGlobalScopeOutput;
 var myRequestResponse;
@@ -22,15 +26,27 @@ return libhttprequestsFunctionScopeOutput;
 }
 function myHttpRequest(myRequestMethod, myRequestPath, myRequestUnknownBoolean = true) {
   /* credit to W3Schools for the following script */
+  if (libhttprequestDebug) {
+    libhttprequestsDebugRequestInitLog = "Debugging a" + myRequestMethod + "request to" + myRequestPath + ":";
+  console.log(libhttprequestsDebugRequestInitLog);
+    libhttprequestsDebugInitRequestResponseLog = "The initial value of myRequestResponse is" + myRequestResponse;
+    console.log(libhttprequestsDebugInitRequestResponseLog);
+  }
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
        // Typical action to be performed when the document is ready:
        myRequestResponse = xhttp.responseText;
+      if (libhttprequestDebug) {
+    libhttprequestsDebugRequestResponseLog = "The request response is:" + xhttp.responseText;
+  console.log(libhttprequestsDebugRequestResponseLog);
+  }
     }
 };
 xhttp.open(myRequestMethod, myRequestPath, myRequestUnknownBoolean);
 xhttp.send();
+libhttprequestsDebugmyHttpRequestFunctionResponseLog = "The myHttpRequest function should return this:" + myRequestResponse;
+console.log(libhttprequestsDebugmyHttpRequestFunctionResponseLog);
 return myRequestResponse;
 }
 
