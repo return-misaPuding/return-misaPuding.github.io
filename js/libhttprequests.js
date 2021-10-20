@@ -7,6 +7,9 @@ function libhttprequestsFunctionTest() {
 console.log ("you should see \" this text was stored in a (global scope/function scope) variable\" under this log");
 libhttprequestsGlobalScopeOutput = "this text was stored in a global scope output";
 console.log (libhttprequestsGlobalScopeOutput);
+var libhttprequestsFunctionScopeOutput;
+libhttprequestsFunctionScopeOutput = "this text was stored in a function scope variable";
+console.log (libhttprequestsFunctionScopeOutput);
 }
 function myHttpRequest(myRequestMethod, myRequestPath, myRequestUnknownBoolean = true) {
   /* credit to W3Schools for the following script */
