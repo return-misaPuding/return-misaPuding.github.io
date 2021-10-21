@@ -29,3 +29,22 @@ a.currentpagebutton:link, a.currentpagebutton:visited {
   text-decoration: none;
   display: inline-block;
 }
+a.mainpagelinkbutton:link, a.mainpagelinkbutton:visited {
+  background-color: aquamarine;
+  font-family: "Comic Sans MS", "Comic Sans", "Lucida Handwriting", "Brush Script MT", cursive, sans-serif;
+  color: black;
+  border: 2px solid black;
+  padding: 3vw 5vw;
+  font-size 8vw;
+  min-width: 320px;
+  min-height: 54px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.mainpagelinkbutton:hover, a.mainpagelinkbutton:active {
+  background-color: blue;
+  color: black;
+  border: 2px solid gray;
+}
