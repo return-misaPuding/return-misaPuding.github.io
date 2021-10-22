@@ -47,3 +47,6 @@ a.mainpagelinkbutton:hover, a.mainpagelinkbutton:active {
   color: black;
   border: 2px solid lightblue;
 }
+.headerbackground {
+background-color: black;
+}
