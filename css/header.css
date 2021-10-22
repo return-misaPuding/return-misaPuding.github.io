@@ -34,7 +34,7 @@ a.mainpagelinkbutton:link, a.mainpagelinkbutton:visited {
   color: black;
   border: 2px solid aquamarine;
   padding: 3vw 5vw;
-  font-size 2em;
+  font-size 32px;
   min-width: 320px;
   min-height: 54px;
   text-align: center;
