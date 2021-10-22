@@ -4,7 +4,6 @@ a.linkbutton:link, a.linkbutton:visited {
   color: white;
   border: 2px solid black;
   padding: 3vw 5vw;
-  font-size 4vw;
   min-width: 80px;
   min-height: 40px;
   text-align: center;
@@ -33,9 +32,9 @@ a.mainpagelinkbutton:link, a.mainpagelinkbutton:visited {
   background-color: aquamarine;
   font-family: "Comic Sans MS", "Comic Sans", "Lucida Handwriting", "Brush Script MT", cursive, sans-serif;
   color: black;
-  border: 2px solid black;
+  border: 2px solid aquamarine;
   padding: 3vw 5vw;
-  font-size 8vw;
+  font-size 2em;
   min-width: 320px;
   min-height: 54px;
   text-align: center;
@@ -44,7 +43,7 @@ a.mainpagelinkbutton:link, a.mainpagelinkbutton:visited {
 }
 
 a.mainpagelinkbutton:hover, a.mainpagelinkbutton:active {
-  background-color: blue;
+  background-color: lightblue;
   color: black;
-  border: 2px solid gray;
+  border: 2px solid lightblue;
 }
