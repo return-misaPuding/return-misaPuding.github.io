@@ -34,7 +34,7 @@ a.currentpagebutton:link, a.currentpagebutton:visited {
 a.mainpagelinkbutton:link, a.mainpagelinkbutton:visited {
   background-color: aquamarine;
   border-radius: 28px;
-  font-family: "Comic Sans MS", "Comic Sans", "Lucida Handwriting", "Brush Script MT", cursive, sans-serif;
+  font-family: "Comic Sans MS", "Comic Sans", "Lucida Handwriting", "Brush Script MT", "cursive", "sans-serif";
   color: black;
   border: 2px solid aquamarine;
   padding: 10px;
