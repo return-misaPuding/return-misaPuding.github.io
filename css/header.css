@@ -1,7 +1,7 @@
 /* credit for the following css code to W3Schools */
 a.linkbutton:link, a.linkbutton:visited {
   background-color: gray;
-  font-size: 20px;
+  font-size: 1.25rem;
   border-radius: 28px;
   color: white;
   border: 2px solid black;
@@ -24,7 +24,7 @@ a.currentpagebutton:link, a.currentpagebutton:visited {
   color: white;
   border: 2px solid orange;
   padding: 10px;
-  font-size 20px;
+  font-size 1.25rem;
   min-width: 80px;
   min-height: 40px;
   text-align: center;
@@ -38,7 +38,7 @@ a.mainpagelinkbutton:link, a.mainpagelinkbutton:visited {
   color: black;
   border: 2px solid aquamarine;
   padding: 10px;
-  font-size: 32px;
+  font-size: 2rem;
   min-width: 320px;
   min-height: 54px;
   text-align: center;
