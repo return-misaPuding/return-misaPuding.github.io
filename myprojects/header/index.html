@@ -16,7 +16,10 @@ xhttp.onreadystatechange = function() {
 };
 xhttp.open("GET", "/header/index.txt", true);
 xhttp.send();
-document.getElementById("headercontainer").innerHTML = myRequestResponse;
+function insertHeader() {
+  document.getElementById("headercontainer").innerHTML = myRequestResponse;
+}
+      setTimeout(insertHeader, 50)
     </script>
     </head>
   <body>
