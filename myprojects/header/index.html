@@ -3,19 +3,9 @@
   <head>
     <link rel="stylesheet" href="/css/sansseriffont.css"></link>
     <link rel="stylesheet" href="/css/header.css"></link>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Header | return-misaPuding.github.io</title>
-    <script>
-        /* credit for the following script to W3Schools */
-var xhttp = new XMLHttpRequest();
-xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-       // Typical action to be performed when the document is ready:
-       document.getElementById("headercontainer").innerHTML = xhttp.responseText;
-    }
-};
-xhttp.open("GET", "/header/index.txt", true);
-xhttp.send();
-    </script>
+    <script src="/js/loaders/headerLoader.js"></script>
     </head>
   <body>
     <header style="width: 100vw;" id="headercontainer">
