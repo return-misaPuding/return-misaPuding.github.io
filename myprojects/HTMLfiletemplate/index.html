@@ -2,9 +2,10 @@
 <html>
   <head>
     <title>HTML document template | return-misaPuding.github.io</title>
-    <link rel="stylesheet" href="/css/marginedelements.css">
     <link rel="stylesheet" href="/css/sansseriffont.css">
-    <link rel="stylesheet" href="/css/centeredtext.css">
+    <link rel="stylesheet" href="/css/marginedelements">
+    <link rel="stylesheet" href="/css/header.css">
+    <script src="/js/loaders/headerLoader.js"></script>
     <script src=https://return-misaPuding.github.io/js/libhttprequests.js></script>
     <script>
     /* declare all variables */
@@ -44,6 +45,8 @@ xhttp.send();
     </script>
   </head>
   <body>
+   <div id="headercontainer"></div>
+   <div class="contentdiv">
     <pre id="HTMLtemplate"></pre>
     <br>
     <input class="cssdtext" type="button" value="Copy template" title="Copy template" onclick="copyTemplate()">
@@ -53,5 +56,6 @@ xhttp.send();
     <input class="cssdtext" type="button" value="Copy the br element" title="Copy the br element" onclick="copyBrElement()">
     <br>
     <input class="cssdtext" type="button" value="Copy the h1 element" title="Copy the h1 element" onclick="copyh1Element()">
+   </div>
   </body>
 </html>
