@@ -3,5 +3,5 @@
        <img src="/mydata/scratchdefaultpfp_48x48.png" style="width: 2.5rem; height: 2.5rem;" alt="My pfp">
        <span title="return-misaPuding">return-misaPuding</span>
      </a>
-     <a class="linkbutton" class="cssdtext" href="/myprojects/" title="My Projects">My Projects</a>
+     <a class="linkbutton cssdtext" href="/myprojects/" title="My Projects">My Projects</a>
     </div>
