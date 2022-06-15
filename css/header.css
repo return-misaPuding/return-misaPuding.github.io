@@ -24,7 +24,7 @@ a.currentpagebutton:link, a.currentpagebutton:visited {
   color: white;
   border: 2px solid orange;
   padding: 10px;
-  font-size 1.25rem;
+  font-size: 1.25rem;
   min-width: 80px;
   min-height: 40px;
   text-align: center;
