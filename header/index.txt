@@ -1,4 +1,4 @@
- <div class="headerbackground">
+ <div class="headerbackground txt">
        <a class="mainpagelinkbutton" href="https://return-misapuding.github.io">
        <img src="/mydata/strawberrypuding_16x16.png" style="width: 2.5rem; height: 2.5rem;" alt="My pfp">
        <span title="return-misaPuding">return-misaPuding</span>
