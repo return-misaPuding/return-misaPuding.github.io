@@ -21,7 +21,6 @@ a.linkbutton:hover, a.linkbutton:active {
 a.mainpagelinkbutton:link, a.mainpagelinkbutton:visited {
   background-color: aquamarine;
   border-radius: 28px;
-  font-family: "Comfortaa", "cursive", "sans-serif";
   color: black;
   border: 2px solid aquamarine;
   padding: 10px;
